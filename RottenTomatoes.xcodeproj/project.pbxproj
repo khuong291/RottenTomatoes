@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9934303F1BF0CD2000710695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934303E1BF0CD2000710695 /* AppDelegate.swift */; };
-		993430411BF0CD2000710695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993430401BF0CD2000710695 /* ViewController.swift */; };
 		993430441BF0CD2000710695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993430421BF0CD2000710695 /* Main.storyboard */; };
 		993430461BF0CD2000710695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993430451BF0CD2000710695 /* Assets.xcassets */; };
 		993430491BF0CD2000710695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993430471BF0CD2000710695 /* LaunchScreen.storyboard */; };
 		993430511BF0D19D00710695 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993430501BF0D19D00710695 /* MovieCell.swift */; };
+		9950744C1BF0F90D00D32CD2 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950744B1BF0F90D00D32CD2 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9934303B1BF0CD2000710695 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9934303E1BF0CD2000710695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		993430401BF0CD2000710695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		993430431BF0CD2000710695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		993430451BF0CD2000710695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		993430481BF0CD2000710695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9934304A1BF0CD2000710695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		993430501BF0D19D00710695 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		9950744B1BF0F90D00D32CD2 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		9934303D1BF0CD2000710695 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				9950744D1BF0F92700D32CD2 /* View Controller */,
 				9934303E1BF0CD2000710695 /* AppDelegate.swift */,
-				993430401BF0CD2000710695 /* ViewController.swift */,
 				993430501BF0D19D00710695 /* MovieCell.swift */,
 				993430421BF0CD2000710695 /* Main.storyboard */,
 				993430451BF0CD2000710695 /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				9934304A1BF0CD2000710695 /* Info.plist */,
 			);
 			path = RottenTomatoes;
+			sourceTree = "<group>";
+		};
+		9950744D1BF0F92700D32CD2 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9950744B1BF0F90D00D32CD2 /* MoviesViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				993430411BF0CD2000710695 /* ViewController.swift in Sources */,
 				9934303F1BF0CD2000710695 /* AppDelegate.swift in Sources */,
 				993430511BF0D19D00710695 /* MovieCell.swift in Sources */,
+				9950744C1BF0F90D00D32CD2 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,7 @@
 				9934304F1BF0CD2000710695 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
