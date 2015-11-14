@@ -15,7 +15,7 @@
 		99EDD41E1BF78BDC004F8C54 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */; };
 		99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */; };
 		99EDD4201BF78BDC004F8C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41B1BF78BDC004F8C54 /* ViewController.swift */; };
-		99EDD4211BF78BDC004F8C54 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41D1BF78BDC004F8C54 /* MovieCell.swift */; };
+		99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */; };
 		99EDD4231BF78C3F004F8C54 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4221BF78C3F004F8C54 /* Media.swift */; };
 		99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4251BF78CC3004F8C54 /* Network.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
 		99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaListViewController.swift; sourceTree = "<group>"; };
 		99EDD41B1BF78BDC004F8C54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99EDD41D1BF78BDC004F8C54 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		99EDD4221BF78C3F004F8C54 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		99EDD4251BF78CC3004F8C54 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		AEF9D99F4BE2F44386D26CDB /* Pods_RottenTomatoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RottenTomatoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 		99EDD41C1BF78BDC004F8C54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				99EDD41D1BF78BDC004F8C54 /* MovieCell.swift */,
+				99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				9934303F1BF0CD2000710695 /* AppDelegate.swift in Sources */,
 				99EDD4231BF78C3F004F8C54 /* Media.swift in Sources */,
 				99EDD4201BF78BDC004F8C54 /* ViewController.swift in Sources */,
-				99EDD4211BF78BDC004F8C54 /* MovieCell.swift in Sources */,
+				99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */,
 				99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */,
 				99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */,
 			);

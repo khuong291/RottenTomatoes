@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '227C14DA4788F6ABA9CE288B'
-               BlueprintName = 'Pods-RottenTomatoes'
+               BlueprintIdentifier = 'C27BA3F8DD9346D62ED98E38'
+               BlueprintName = 'AlamofireImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_RottenTomatoes.framework'>
+               BuildableName = 'AlamofireImage.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

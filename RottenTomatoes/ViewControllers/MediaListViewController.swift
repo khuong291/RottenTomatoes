@@ -7,57 +7,54 @@
 //
 
 import UIKit
+import SVProgressHUD
+import Alamofire
 
 class MediaListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var movies: [NSDictionary]!
+    var mediaType: MediaType!
+    var mediaList = [Media]()
 
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL(string: "https://coderschool-movies.herokuapp.com/movies?api_key=xja087zcvxljadsflh214")!
-        let request = NSURLRequest(URL: url)
-
-        NSURLConnection.sendAsynchronousRequest(request,
-            queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
-
-                let json = try? NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary
-                if let json = json {
-                    self.movies = json!["movies"] as? [NSDictionary]
-                    self.tableView.reloadData()
-                }
-        }
         tableView.dataSource = self
         tableView.delegate = self
+
+        load()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func load() {
+        let network = Network()
+
+        SVProgressHUD.showWithStatus("Loading data")
+        network.load(mediaType) { (mediaList) -> Void in
+            if let mediaList = mediaList {
+                SVProgressHUD.dismiss()
+                self.mediaList = mediaList
+                self.tableView.reloadData()
+            } else {
+                SVProgressHUD.showErrorWithStatus("Error loading data")
+            }
+        }
     }
+
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let movies = movies {
-            return movies.count
-        } else {
-            return 0
-        }
+        return mediaList.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("MediaCell", forIndexPath: indexPath) as! MediaCell
 
-        let movie = movies![indexPath.row]
+        let media = mediaList[indexPath.row]
 
-        cell.titleLabel.text = movie["title"] as? String
-        cell.synopsisLabel.text = movie["synopsis"] as? String
-        //let placeholder = UIImage(named: "no_photo")
-
-        let url = NSURL(string: movie.valueForKeyPath("posters.thumbnail") as! String)!
-        cell.posterView.setImageWithURL(url)
+        cell.titleLabel.text = media.title
+        cell.synopsisLabel.text = media.synopsis
+        cell.posterView.af_setImageWithURL(media.thumbnailURL)
 
         return cell
     }
@@ -69,9 +66,10 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
-        let movie = movies[indexPath!.row]
-        let movieDetailsViewController = segue.destinationViewController as! MediaDetailViewController
-        movieDetailsViewController.movie = movie
+        let media = mediaList[indexPath!.row]
+
+        let mediaDetailVC = segue.destinationViewController as! MediaDetailViewController
+        mediaDetailVC.media = media
     }
 
 }

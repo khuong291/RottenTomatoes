@@ -14,15 +14,23 @@ let dvdURLString = "https://coderschool-movies.herokuapp.com/dvds?api_key=xja087
 typealias Completion = ([Media]?) -> Void
 
 struct Network {
-    func loadMovies(completion: Completion) {
+    func load(mediaType: MediaType, completion: Completion) {
+        if mediaType == .Movie {
+            loadMovies(completion)
+        } else {
+            loadDVDs(completion)
+        }
+    }
+
+    private func loadMovies(completion: Completion) {
         load(movieURLString, completion: completion)
     }
 
-    func loadDVDs(completion: Completion) {
+    private func loadDVDs(completion: Completion) {
         load(dvdURLString, completion: completion)
     }
 
-    func load(urlString: String, completion: Completion) {
+    private func load(urlString: String, completion: Completion) {
         Alamofire.request(.GET, urlString)
             .responseJSON { response in
                 if let JSON = response.result.value as? NSDictionary {

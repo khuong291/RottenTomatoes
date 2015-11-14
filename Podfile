@@ -6,5 +6,6 @@ use_frameworks!
 target 'RottenTomatoes' do
 	pod 'Alamofire', '~> 3.1'
 	pod 'SVProgressHUD', '2.0-beta'
+    pod 'AlamofireImage', '~> 2.1'
 end
 

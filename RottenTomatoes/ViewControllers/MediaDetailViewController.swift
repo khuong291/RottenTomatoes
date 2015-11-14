@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class MediaDetailViewController: UIViewController {
 
@@ -14,22 +16,15 @@ class MediaDetailViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
 
-    var movie: NSDictionary!
-
+    var media: Media!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = movie["title"] as? String
-        synopsisLabel.text = movie["synopsis"] as? String
+        self.title = media.title
 
-        let url = NSURL(string: movie.valueForKeyPath("posters.detailed") as! String)!
-        imageView.setImageWithURL(url)
-        self.title = movie["title"] as? String
+        titleLabel.text = media.title
+        synopsisLabel.text = media.synopsis
+        imageView.af_setImageWithURL(media.detailURL)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovieCell: UITableViewCell {
+class MediaCell: UITableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var synopsisLabel: UILabel!    

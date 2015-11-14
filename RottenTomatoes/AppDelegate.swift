@@ -23,10 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Movies
         let moviesVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
         moviesVC.title = "Movies"
+        moviesVC.mediaType = .Movie
         let moviesNC = UINavigationController(rootViewController: moviesVC)
+
         //DVDs
         let dvdsVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
         dvdsVC.title = "DVDs"
+        dvdsVC.mediaType = .DVD
         let dvdsNC = UINavigationController(rootViewController: dvdsVC)
 
         tabBarController.viewControllers = [moviesNC, dvdsNC]

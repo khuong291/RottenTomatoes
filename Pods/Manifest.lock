@@ -1,13 +1,17 @@
 PODS:
   - Alamofire (3.1.2)
+  - AlamofireImage (2.1.0):
+    - Alamofire (~> 3.1)
   - SVProgressHUD (2.0-beta)
 
 DEPENDENCIES:
   - Alamofire (~> 3.1)
+  - AlamofireImage (~> 2.1)
   - SVProgressHUD (= 2.0-beta)
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  AlamofireImage: 97e00995920d85b5cb23ee4c3b7f92605f5dc74b
   SVProgressHUD: c83337f10ed32d701c423d519059a249973c8662
 
 COCOAPODS: 0.39.0
