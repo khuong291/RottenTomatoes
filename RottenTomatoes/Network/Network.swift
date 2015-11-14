@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 let movieURLString = "https://coderschool-movies.herokuapp.com/movies?api_key=xja087zcvxljadsflh214"
 let dvdURLString = "https://coderschool-movies.herokuapp.com/dvds?api_key=xja087zcvxljadsflh214"
@@ -22,6 +23,14 @@ struct Network {
     }
 
     func load(urlString: String, completion: Completion) {
-
+        Alamofire.request(.GET, urlString)
+            .responseJSON { response in
+                if let JSON = response.result.value as? NSDictionary {
+                    let mediaList = Media.parse(JSON)
+                    completion(mediaList)
+                } else {
+                    completion(nil)
+                }
+        }
     }
 }

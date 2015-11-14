@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MediaListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var movies: [NSDictionary]!
 
@@ -70,7 +70,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
         let movie = movies[indexPath!.row]
-        let movieDetailsViewController = segue.destinationViewController as! MovieDetailsViewController
+        let movieDetailsViewController = segue.destinationViewController as! MediaDetailViewController
         movieDetailsViewController.movie = movie
     }
 

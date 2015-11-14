@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovieDetailsViewController: UIViewController {
+class MediaDetailViewController: UIViewController {
 
     @IBOutlet var synopsisLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!

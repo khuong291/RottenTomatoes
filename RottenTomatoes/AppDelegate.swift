@@ -15,7 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let tabBarController = window!.rootViewController! as! UITabBarController
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        // Movies
+        let moviesVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
+        moviesVC.title = "Movies"
+        let moviesNC = UINavigationController(rootViewController: moviesVC)
+        //DVDs
+        let dvdsVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
+        dvdsVC.title = "DVDs"
+        let dvdsNC = UINavigationController(rootViewController: dvdsVC)
+
+        tabBarController.viewControllers = [moviesNC, dvdsNC]
         return true
     }
 
