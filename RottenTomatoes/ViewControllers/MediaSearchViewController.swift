@@ -6,6 +6,7 @@ import AlamofireImage
 class MediaSearchViewController: UITableViewController {
 
     var mediaList = [Media]()
+    var callback: (Media -> Void)?
 
     func update(mediaList: [Media]) {
         self.mediaList = mediaList
@@ -24,22 +25,16 @@ class MediaSearchViewController: UITableViewController {
 
         cell.titleLabel.text = media.title
         cell.synopsisLabel.text = media.synopsis
-//        cell.posterView.af_setImageWithURL(media.thumbnailURL)
+        cell.posterImage.af_setImageWithURL(media.thumbnailURL)
 
         return cell
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPathForCell(cell)
-        let media = mediaList[indexPath!.row]
-
-        let mediaDetailVC = segue.destinationViewController as! MediaDetailViewController
-        mediaDetailVC.media = media
+        let media = mediaList[indexPath.row]
+        callback?(media)
     }
     
 }

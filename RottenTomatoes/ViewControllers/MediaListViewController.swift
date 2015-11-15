@@ -27,6 +27,12 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
 
         mediaSearchVC =  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MediaSearch") as! MediaSearchViewController
+
+        mediaSearchVC.callback = { media in
+            self.showMedia(media)
+            self.searchController.active = false
+        }
+
         searchController = UISearchController(searchResultsController: mediaSearchVC)
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchResultsUpdater = self
@@ -83,15 +89,16 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        let media = mediaList[indexPath.row]
+        showMedia(media)
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPathForCell(cell)
-        let media = mediaList[indexPath!.row]
+    func showMedia(media: Media) {
+        let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MediaDetail") as! MediaDetailViewController
+        detailVC.media = media
 
-        let mediaDetailVC = segue.destinationViewController as! MediaDetailViewController
-        mediaDetailVC.media = media
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 
     func updateSearchResultsForSearchController(searchController: UISearchController) {
