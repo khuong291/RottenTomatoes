@@ -25,3 +25,8 @@ Optional
 * [x] Add a tab bar for Box Office and DVD.
 
 * [x] Add a search bar: pretty simple implementation of searching against the existing table view data.
+
+Demo
+
+![](RottenTomatoes.gif)
+
