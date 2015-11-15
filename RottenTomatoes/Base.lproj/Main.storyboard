@@ -105,20 +105,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY" userLabel="Information View">
-                                <rect key="frame" x="0.0" y="310" width="320" height="258"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY" userLabel="Information View">
+                                <rect key="frame" x="-4" y="310" width="328" height="258"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Khuong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-Nm-c5T">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khuong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-Nm-c5T">
+                                        <rect key="frame" x="5" y="0.0" width="318" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="F91-uW-UOl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.9812210871" green="0.98237601139999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kET-fa-FnF">
-                                        <rect key="frame" x="0.0" y="43" width="320" height="215"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kET-fa-FnF">
+                                        <rect key="frame" x="5" y="40" width="318" height="218"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.9812210871" green="0.98237601139999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -126,9 +129,28 @@
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MDq-Nm-c5T" firstAttribute="top" secondItem="iCv-if-MWY" secondAttribute="top" id="7Ag-Qv-4Y2"/>
+                                    <constraint firstItem="kET-fa-FnF" firstAttribute="leading" secondItem="iCv-if-MWY" secondAttribute="leading" constant="5" id="7zF-JL-IJO"/>
+                                    <constraint firstAttribute="height" constant="258" id="B4u-sL-FLq"/>
+                                    <constraint firstItem="MDq-Nm-c5T" firstAttribute="leading" secondItem="iCv-if-MWY" secondAttribute="leading" constant="5" id="BSB-i2-o5z"/>
+                                    <constraint firstAttribute="bottom" secondItem="kET-fa-FnF" secondAttribute="bottom" id="CWb-V1-1aQ"/>
+                                    <constraint firstItem="kET-fa-FnF" firstAttribute="top" secondItem="MDq-Nm-c5T" secondAttribute="top" constant="40" id="ENF-VH-OdB"/>
+                                    <constraint firstAttribute="trailing" secondItem="kET-fa-FnF" secondAttribute="trailing" constant="5" id="Foh-yl-80c"/>
+                                    <constraint firstAttribute="trailing" secondItem="MDq-Nm-c5T" secondAttribute="trailing" constant="5" id="NK5-pe-ZP2"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iCv-if-MWY" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leadingMargin" constant="-20" id="2sJ-k2-Inc"/>
+                            <constraint firstItem="cOm-V0-TWz" firstAttribute="centerY" secondItem="HfJ-Ox-f6Z" secondAttribute="centerY" id="4pz-Sh-Nnd"/>
+                            <constraint firstItem="cOm-V0-TWz" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leadingMargin" constant="-20" id="De8-0X-FEf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iCv-if-MWY" secondAttribute="trailing" constant="-20" id="Oft-Y0-Fpg"/>
+                            <constraint firstItem="cOm-V0-TWz" firstAttribute="top" secondItem="HfJ-Ox-f6Z" secondAttribute="topMargin" id="gdL-zK-BkS"/>
+                            <constraint firstItem="GS1-70-Pyi" firstAttribute="top" secondItem="iCv-if-MWY" secondAttribute="bottom" id="kvj-Oi-Tu1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cOm-V0-TWz" secondAttribute="trailing" constant="-20" id="reZ-wj-qYS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3uR-40-WVD"/>
                     <connections>

@@ -17,7 +17,6 @@
 		99E0C4B31BF8495C0027C43E /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E0C4B11BF8495C0027C43E /* superman.png */; };
 		99EDD41E1BF78BDC004F8C54 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */; };
 		99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */; };
-		99EDD4201BF78BDC004F8C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41B1BF78BDC004F8C54 /* ViewController.swift */; };
 		99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */; };
 		99EDD4231BF78C3F004F8C54 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4221BF78C3F004F8C54 /* Media.swift */; };
 		99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4251BF78CC3004F8C54 /* Network.swift */; };
@@ -39,7 +38,6 @@
 		99E0C4B11BF8495C0027C43E /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superman.png; path = ../../../Desktop/superman.png; sourceTree = "<group>"; };
 		99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
 		99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaListViewController.swift; sourceTree = "<group>"; };
-		99EDD41B1BF78BDC004F8C54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		99EDD4221BF78C3F004F8C54 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		99EDD4251BF78CC3004F8C54 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			children = (
 				99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */,
 				99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */,
-				99EDD41B1BF78BDC004F8C54 /* ViewController.swift */,
 				99EDD4451BF7AB05004F8C54 /* MediaSearchViewController.swift */,
 			);
 			path = ViewControllers;
@@ -277,7 +274,6 @@
 				99EDD41E1BF78BDC004F8C54 /* MediaDetailViewController.swift in Sources */,
 				9934303F1BF0CD2000710695 /* AppDelegate.swift in Sources */,
 				99EDD4231BF78C3F004F8C54 /* Media.swift in Sources */,
-				99EDD4201BF78BDC004F8C54 /* ViewController.swift in Sources */,
 				99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */,
 				99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */,
 				99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */,
