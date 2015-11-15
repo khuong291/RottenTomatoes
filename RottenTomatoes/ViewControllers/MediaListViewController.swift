@@ -14,6 +14,7 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
 
     var mediaType: MediaType!
     var mediaList = [Media]()
+    var refreshControl = UIRefreshControl!()
 
     @IBOutlet var tableView: UITableView!
 
@@ -24,6 +25,31 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
 
         load()
+        refreshMedia()
+    }
+
+    func refreshMedia() {
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "🐌🐌🐌🐌Refreshing🐌🐌🐌🐌")
+        self.refreshControl.addTarget(self, action: "onRefresh", forControlEvents: .ValueChanged)
+        self.tableView.addSubview(refreshControl)
+    }
+
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+
+    func onRefresh() {
+        delay(3, closure: {
+            self.load()
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
+        })
     }
 
     func load() {

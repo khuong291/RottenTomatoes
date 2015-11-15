@@ -105,19 +105,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY">
                                 <rect key="frame" x="0.0" y="310" width="320" height="258"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-iu-LDu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-iu-LDu">
                                         <rect key="frame" x="0.0" y="8" width="320" height="33"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                         <color key="textColor" red="0.0" green="0.95686274510000002" blue="0.79422636560083593" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBn-6J-BJ2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBn-6J-BJ2">
                                         <rect key="frame" x="0.0" y="49" width="320" height="209"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.98122108710695843" green="0.98237601138428865" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -125,24 +122,17 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="K8b-iu-LDu" firstAttribute="leading" secondItem="iCv-if-MWY" secondAttribute="leading" id="2XV-BU-w04"/>
-                                    <constraint firstAttribute="trailing" secondItem="DBn-6J-BJ2" secondAttribute="trailing" constant="5" id="Eya-ed-IaY"/>
-                                    <constraint firstItem="K8b-iu-LDu" firstAttribute="top" secondItem="iCv-if-MWY" secondAttribute="top" constant="5" id="HXX-Pp-nd4"/>
-                                    <constraint firstAttribute="trailing" secondItem="K8b-iu-LDu" secondAttribute="trailing" id="Xgy-3x-AEm"/>
-                                    <constraint firstItem="DBn-6J-BJ2" firstAttribute="top" secondItem="K8b-iu-LDu" secondAttribute="top" constant="30" id="fre-L1-FVp"/>
-                                    <constraint firstItem="DBn-6J-BJ2" firstAttribute="leading" secondItem="iCv-if-MWY" secondAttribute="leading" constant="5" id="nzL-hY-K41"/>
-                                </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cOm-V0-TWz" secondAttribute="trailing" id="9v5-xm-Veo"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="iCv-if-MWY" secondAttribute="bottom" id="BS0-I3-PxZ"/>
-                            <constraint firstItem="cOm-V0-TWz" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leading" id="gn2-ci-xla"/>
-                            <constraint firstItem="iCv-if-MWY" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leading" id="mHz-1D-dgo"/>
-                            <constraint firstItem="cOm-V0-TWz" firstAttribute="top" secondItem="RS4-0b-83S" secondAttribute="bottom" id="uAJ-fR-ixt"/>
-                            <constraint firstAttribute="trailing" secondItem="iCv-if-MWY" secondAttribute="trailing" id="yuP-Rq-Oi7"/>
+                            <constraint firstAttribute="trailing" secondItem="cOm-V0-TWz" secondAttribute="trailing" id="LtD-sG-MkH"/>
+                            <constraint firstItem="cOm-V0-TWz" firstAttribute="top" secondItem="HfJ-Ox-f6Z" secondAttribute="top" id="ZEL-iV-omw"/>
+                            <constraint firstItem="cOm-V0-TWz" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leading" id="kcv-5w-Qhw"/>
+                            <constraint firstAttribute="bottom" secondItem="cOm-V0-TWz" secondAttribute="bottom" id="nn9-JM-C7y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3uR-40-WVD"/>

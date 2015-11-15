@@ -12,12 +12,16 @@
 		993430441BF0CD2000710695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993430421BF0CD2000710695 /* Main.storyboard */; };
 		993430461BF0CD2000710695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993430451BF0CD2000710695 /* Assets.xcassets */; };
 		993430491BF0CD2000710695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993430471BF0CD2000710695 /* LaunchScreen.storyboard */; };
+		99E0C4AF1BF848C50027C43E /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E0C4AE1BF848C50027C43E /* star.png */; };
+		99E0C4B21BF8495C0027C43E /* hulk.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E0C4B01BF8495C0027C43E /* hulk.png */; };
+		99E0C4B31BF8495C0027C43E /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E0C4B11BF8495C0027C43E /* superman.png */; };
 		99EDD41E1BF78BDC004F8C54 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */; };
 		99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */; };
 		99EDD4201BF78BDC004F8C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41B1BF78BDC004F8C54 /* ViewController.swift */; };
 		99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */; };
 		99EDD4231BF78C3F004F8C54 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4221BF78C3F004F8C54 /* Media.swift */; };
 		99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4251BF78CC3004F8C54 /* Network.swift */; };
+		99EDD4461BF7AB05004F8C54 /* MediaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDD4451BF7AB05004F8C54 /* MediaSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +34,16 @@
 		993430481BF0CD2000710695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9934304A1BF0CD2000710695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		995074511BF1160D00D32CD2 /* RottenTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
+		99E0C4AE1BF848C50027C43E /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../../Desktop/star.png; sourceTree = "<group>"; };
+		99E0C4B01BF8495C0027C43E /* hulk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hulk.png; path = ../../../Desktop/hulk.png; sourceTree = "<group>"; };
+		99E0C4B11BF8495C0027C43E /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superman.png; path = ../../../Desktop/superman.png; sourceTree = "<group>"; };
 		99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
 		99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaListViewController.swift; sourceTree = "<group>"; };
 		99EDD41B1BF78BDC004F8C54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		99EDD4221BF78C3F004F8C54 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		99EDD4251BF78CC3004F8C54 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		99EDD4451BF7AB05004F8C54 /* MediaSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaSearchViewController.swift; sourceTree = "<group>"; };
 		AEF9D99F4BE2F44386D26CDB /* Pods_RottenTomatoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RottenTomatoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,9 @@
 		9934303D1BF0CD2000710695 /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				99E0C4B01BF8495C0027C43E /* hulk.png */,
+				99E0C4B11BF8495C0027C43E /* superman.png */,
+				99E0C4AE1BF848C50027C43E /* star.png */,
 				99EDD4241BF78CBD004F8C54 /* Network */,
 				99EDD4171BF78BDC004F8C54 /* Models */,
 				99EDD4181BF78BDC004F8C54 /* ViewControllers */,
@@ -108,6 +119,7 @@
 				99EDD4191BF78BDC004F8C54 /* MediaDetailViewController.swift */,
 				99EDD41A1BF78BDC004F8C54 /* MediaListViewController.swift */,
 				99EDD41B1BF78BDC004F8C54 /* ViewController.swift */,
+				99EDD4451BF7AB05004F8C54 /* MediaSearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,6 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				993430491BF0CD2000710695 /* LaunchScreen.storyboard in Resources */,
+				99E0C4B21BF8495C0027C43E /* hulk.png in Resources */,
+				99E0C4B31BF8495C0027C43E /* superman.png in Resources */,
+				99E0C4AF1BF848C50027C43E /* star.png in Resources */,
 				993430461BF0CD2000710695 /* Assets.xcassets in Resources */,
 				993430441BF0CD2000710695 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +281,7 @@
 				99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */,
 				99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */,
 				99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */,
+				99EDD4461BF7AB05004F8C54 /* MediaSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

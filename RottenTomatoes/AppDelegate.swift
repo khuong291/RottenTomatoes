@@ -23,16 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Movies
         let moviesVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
         moviesVC.title = "Movies"
+        moviesVC.tabBarItem.image = UIImage(named: "superman")?.imageWithRenderingMode(.AlwaysOriginal)
         moviesVC.mediaType = .Movie
         let moviesNC = UINavigationController(rootViewController: moviesVC)
 
         //DVDs
         let dvdsVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
         dvdsVC.title = "DVDs"
+        dvdsVC.tabBarItem.image = UIImage(named: "hulk")?.imageWithRenderingMode(.AlwaysOriginal)
         dvdsVC.mediaType = .DVD
         let dvdsNC = UINavigationController(rootViewController: dvdsVC)
 
         tabBarController.viewControllers = [moviesNC, dvdsNC]
+        window?.makeKeyAndVisible()
         return true
     }
 
