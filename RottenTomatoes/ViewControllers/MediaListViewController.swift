@@ -10,11 +10,13 @@ import UIKit
 import SVProgressHUD
 import Alamofire
 
-class MediaListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MediaListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
 
     var mediaType: MediaType!
     var mediaList = [Media]()
     var refreshControl = UIRefreshControl!()
+    var mediaSearchVC: MediaSearchViewController!
+    var searchController: UISearchController!
 
     @IBOutlet var tableView: UITableView!
 
@@ -23,6 +25,11 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
 
         tableView.dataSource = self
         tableView.delegate = self
+
+        mediaSearchVC =  UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MediaSearch") as! MediaSearchViewController
+        searchController = UISearchController(searchResultsController: mediaSearchVC)
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
 
         load()
         refreshMedia()
@@ -87,4 +94,17 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
         mediaDetailVC.media = media
     }
 
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let searchText = searchController.searchBar.text
+
+        if searchText == nil {
+            return
+        }
+
+        let filteredMediaList = mediaList.filter { (media) -> Bool in
+            return media.title.containsString(searchText!)
+        }
+
+        mediaSearchVC.update(filteredMediaList)
+    }
 }

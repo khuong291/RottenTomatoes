@@ -11,6 +11,7 @@
 		99053BD21BF8B7CA00384342 /* hulk.png in Resources */ = {isa = PBXBuildFile; fileRef = 99053BCF1BF8B7CA00384342 /* hulk.png */; };
 		99053BD31BF8B7CA00384342 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 99053BD01BF8B7CA00384342 /* star.png */; };
 		99053BD41BF8B7CA00384342 /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = 99053BD11BF8B7CA00384342 /* superman.png */; };
+		99053BD61BF8C9B600384342 /* MediaSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99053BD51BF8C9B600384342 /* MediaSearchCell.swift */; };
 		9934303F1BF0CD2000710695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934303E1BF0CD2000710695 /* AppDelegate.swift */; };
 		993430441BF0CD2000710695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 993430421BF0CD2000710695 /* Main.storyboard */; };
 		993430461BF0CD2000710695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993430451BF0CD2000710695 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		99053BCF1BF8B7CA00384342 /* hulk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hulk.png; sourceTree = SOURCE_ROOT; };
 		99053BD01BF8B7CA00384342 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = SOURCE_ROOT; };
 		99053BD11BF8B7CA00384342 /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman.png; sourceTree = SOURCE_ROOT; };
+		99053BD51BF8C9B600384342 /* MediaSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaSearchCell.swift; sourceTree = "<group>"; };
 		9934303B1BF0CD2000710695 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9934303E1BF0CD2000710695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		993430431BF0CD2000710695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				99EDD41D1BF78BDC004F8C54 /* MediaCell.swift */,
+				99053BD51BF8C9B600384342 /* MediaSearchCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				99EDD4211BF78BDC004F8C54 /* MediaCell.swift in Sources */,
 				99EDD4261BF78CC3004F8C54 /* Network.swift in Sources */,
 				99EDD41F1BF78BDC004F8C54 /* MediaListViewController.swift in Sources */,
+				99053BD61BF8C9B600384342 /* MediaSearchCell.swift in Sources */,
 				99EDD4461BF7AB05004F8C54 /* MediaSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
