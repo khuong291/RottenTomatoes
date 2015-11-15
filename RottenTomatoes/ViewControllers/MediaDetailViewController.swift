@@ -12,9 +12,9 @@ import AlamofireImage
 
 class MediaDetailViewController: UIViewController {
 
-    @IBOutlet var synopsisLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var synopsisTextView: UITextView!
 
     var media: Media!
     
@@ -24,7 +24,7 @@ class MediaDetailViewController: UIViewController {
         self.title = media.title
 
         titleLabel.text = media.title
-        synopsisLabel.text = media.synopsis
+        synopsisTextView.text = media.synopsis
         imageView.af_setImageWithURL(media.detailURL)
     }
 }

@@ -105,41 +105,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY">
-                                <rect key="frame" x="0.0" y="310" width="320" height="258"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-iu-LDu">
-                                        <rect key="frame" x="0.0" y="8" width="320" height="33"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                        <color key="textColor" red="0.0" green="0.95686274510000002" blue="0.79422636560083593" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBn-6J-BJ2">
-                                        <rect key="frame" x="0.0" y="49" width="320" height="209"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="0.98122108710695843" green="0.98237601138428865" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-V0-TWz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-if-MWY" userLabel="Information View">
+                                <rect key="frame" x="0.0" y="310" width="320" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Khuong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-Nm-c5T">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" red="0.9812210871" green="0.98237601139999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kET-fa-FnF">
+                                        <rect key="frame" x="0.0" y="43" width="320" height="215"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" red="0.9812210871" green="0.98237601139999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cOm-V0-TWz" secondAttribute="trailing" id="LtD-sG-MkH"/>
-                            <constraint firstItem="cOm-V0-TWz" firstAttribute="top" secondItem="HfJ-Ox-f6Z" secondAttribute="top" id="ZEL-iV-omw"/>
-                            <constraint firstItem="cOm-V0-TWz" firstAttribute="leading" secondItem="HfJ-Ox-f6Z" secondAttribute="leading" id="kcv-5w-Qhw"/>
-                            <constraint firstAttribute="bottom" secondItem="cOm-V0-TWz" secondAttribute="bottom" id="nn9-JM-C7y"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3uR-40-WVD"/>
                     <connections>
                         <outlet property="imageView" destination="cOm-V0-TWz" id="W74-xh-GFg"/>
-                        <outlet property="synopsisLabel" destination="DBn-6J-BJ2" id="9J3-eP-u13"/>
-                        <outlet property="titleLabel" destination="K8b-iu-LDu" id="0vU-lA-wKy"/>
+                        <outlet property="synopsisTextView" destination="kET-fa-FnF" id="2Xw-J3-G6r"/>
+                        <outlet property="titleLabel" destination="MDq-Nm-c5T" id="7Bx-WL-M4l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjo-7I-IXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
