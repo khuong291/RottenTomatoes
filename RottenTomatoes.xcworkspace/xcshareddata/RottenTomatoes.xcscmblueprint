@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "217FDF1B5937B6F1FB0964EBAF82C7A0036D9329",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "217FDF1B5937B6F1FB0964EBAF82C7A0036D9329" : 0,
+    "C4EDCC3440433562BBF49EFB80B0B79FBCB9DAD7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "96B392B1-8242-4930-8F78-8FF1DFF99F88",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "217FDF1B5937B6F1FB0964EBAF82C7A0036D9329" : "RottenTomatoes\/",
+    "C4EDCC3440433562BBF49EFB80B0B79FBCB9DAD7" : "InstagramFeed\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RottenTomatoes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RottenTomatoes.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/khuong291\/RottenTomatoes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "217FDF1B5937B6F1FB0964EBAF82C7A0036D9329"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/khuong291\/InstagramFeed.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4EDCC3440433562BBF49EFB80B0B79FBCB9DAD7"
+    }
+  ]
+}

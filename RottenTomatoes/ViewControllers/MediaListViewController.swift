@@ -35,21 +35,8 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
         self.tableView.addSubview(refreshControl)
     }
 
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
-
     func onRefresh() {
-        delay(3, closure: {
-            self.load()
-            self.tableView.reloadData()
-            self.refreshControl.endRefreshing()
-        })
+        self.refreshControl.endRefreshing()
     }
 
     func load() {
