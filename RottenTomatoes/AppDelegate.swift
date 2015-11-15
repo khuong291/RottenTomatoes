@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         moviesVC.tabBarItem.image = UIImage(named: "superman")?.imageWithRenderingMode(.AlwaysOriginal)
         moviesVC.mediaType = .Movie
         let moviesNC = UINavigationController(rootViewController: moviesVC)
+        moviesNC.navigationBar.barTintColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        moviesNC.navigationBar.tintColor = UIColor.yellowColor()
+        moviesNC.navigationBar.barStyle = UIBarStyle.Black
+        moviesNC.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.redColor()]
 
         //DVDs
         let dvdsVC = storyboard.instantiateViewControllerWithIdentifier("MediaList") as! MediaListViewController
@@ -33,8 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         dvdsVC.tabBarItem.image = UIImage(named: "hulk")?.imageWithRenderingMode(.AlwaysOriginal)
         dvdsVC.mediaType = .DVD
         let dvdsNC = UINavigationController(rootViewController: dvdsVC)
+        dvdsNC.navigationBar.barTintColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        dvdsNC.navigationBar.tintColor = UIColor.yellowColor()
+        dvdsNC.navigationBar.barStyle = UIBarStyle.Black
+        dvdsNC.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.redColor()]
+
 
         tabBarController.viewControllers = [moviesNC, dvdsNC]
+        tabBarController.tabBar.barTintColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         window?.makeKeyAndVisible()
         return true
     }
