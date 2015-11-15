@@ -36,7 +36,9 @@ class MediaListViewController: UIViewController, UITableViewDataSource, UITableV
     }
 
     func onRefresh() {
-        self.refreshControl.endRefreshing()
+            self.load()
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
     }
 
     func load() {
